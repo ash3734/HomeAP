@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/tw__transparent"
+    android:orientation="vertical"
+    tools:context=".deviceAdd.DeviceAddActivityDialog">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        <TextView
+            android:text="장치 추가"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="장치 사용자 이름"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/device_add_name_edit"
+                android:hint="Input Text Here"
+                android:textSize="13sp"
+                android:theme="@style/DeviceEditTextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="장치 형태"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:background="#30000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="스마트폰"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:background="#30000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="태블릿"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:background="#30000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="노트북"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:background="#30000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="기타"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:text="mac 주소"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/device_add_mac_edit"
+                android:hint="Input Text Here"
+                android:textSize="13sp"
+                android:layout_width="200dp"
+                android:theme="@style/DeviceEditTextStyle"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:background="#15000000"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/device_add_not_btn"
+                android:text="취소"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/device_add_btn"
+                android:text="확인"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

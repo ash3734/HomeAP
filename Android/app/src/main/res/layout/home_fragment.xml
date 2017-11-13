@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/border_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.ddoc.com.home.MainFrament">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/main_imageview"
+            android:src="@drawable/son"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/main_imageview"
+            >
+            <TextView
+                android:id="@+id/main_textview_user"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="작은아들"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_textview_device"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:text="스마트폰"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialog_textview_dday"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:text="디바이스 정보"
+        />
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="최근 접속 시간" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="2017-07-20 00:12:00:00" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="차단 사이트 접속 현황" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="2017-07-20 00:12:00:00" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:text="차단 설정"
+        />
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:text="성인 사이트" />
+        <Switch
+            android:id="@+id/home_is_adult_block"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:text="도박 사이트" />
+        <Switch
+            android:id="@+id/home_is_gamble_block"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:text="게임 사이트" />
+        <Switch
+            android:id="@+id/home_is_game_block"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#15000000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:text="비학습 사이트" />
+        <Switch
+            android:id="@+id/home_is_learning_block"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_define_test"
+            android:layout_marginTop="16dp"
+            android:text="사용자 정의"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            />
+        <ImageView
+            android:id="@+id/home_user_define_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_user_define_list"
+            android:layout_below="@+id/user_define_test"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>
